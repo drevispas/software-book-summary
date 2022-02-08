@@ -48,7 +48,7 @@
     val nameString: String = "yong" // name은 이미 문자열이라는 사실을 포함하고 있다.
     ```
 
-### Use Pronunciable Names
+### Use Pronounceable Names
 - 발음할 수 없는 이름은 만들지 말자.
   ```kotlin
   val genYYYYMMDD
@@ -89,7 +89,7 @@ val requiredChalks = calculateChalks(NUMBER_OF_CLASSES, CHALKS_PER_CLASSROOM)
   ```
 - 인터페이스와 그 구현 클래스를 구분하기 위해 인코딩을 해야한다면 클래스 쪽을 선호한다.
   ```kotlin
-  interfacle ShapeFactory // IShapeFactory보다는
+  interface ShapeFactory // IShapeFactory보다는
   class ShapeFactoryImp : ShapeFactory // 구현클래스쪽에 인코딩 단어 추가
   ```
 
@@ -135,7 +135,7 @@ val point = Complex.FromRealNumber(23.0) // 원래 생성자 Complext(RealNumber
 ### Add Meaningful Context
 - 이름은 context 안에서 의미가 정확해진다.
 - 함수 안에 street, city, state 같은 변수들이 섞여 있을 때 각각 주소의 부분임을 알 수 있지만 state 단독으로 나타난다면 짐작하기가 어렵다.
-- addrState 같이 prefix를 붙일 수도 있지만 Address 클래스를 만들고 그 멤버로 편입시키는 것이 더 많은 context를 줄 수 있다.
+- addrState 같이 prefix를 붙일 수도 있지만 Address 클래스를 만들고 그 멤버로 편입시키는 것이 더 나은 context를 줄 수 있다.
 
 ### Don't Add Gratuitous Context
 - 애플리케이션 이름을 접두어 모든 클래스에 붙이는 것은 불필요하다. 사실 IDE로 검색할 때 너무 많은 리스트가 나와서 불편해진다.
