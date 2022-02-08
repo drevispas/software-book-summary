@@ -5,24 +5,25 @@
   val d = 10 // distance
   ```
 - Magic number 대신에 의도를 나타내는 함수를 사용한다.
-    ```kotlin
-    if (cell.status == FLAGGED)
-    // -->
-    if (cell.isFlagged())
-    ```
+  ```kotlin
+  if (cell.status == FLAGGED)
+  // -->
+  if (cell.isFlagged())
+  ```
+  
 ### Avoid Disinformation
 - Disinformation: 의도를 오해하게 만드는 단서
 - 자신이 만든 약어가 일반적인 사용되는 다른 단어와 겹치면 사용하지 않는다.
-    ```kotlin
-    val hp = 100 // horse power의 약어로 만들었지만 다른 사람들은 컴퓨터 회사 이름으로 생각한다.
-    ```
+  ```kotlin
+  val hp = 100 // horse power의 약어로 만들었지만 다른 사람들은 컴퓨터 회사 이름으로 생각한다.
+  ```
 - 여러 객체 무리를 나타내기 위해서 ~List를 붙일 때 주의한다. 언어에서 제공하는 List 형이 아니라면 읽는 사람이 그런 자료구조로 착각할 수 있다. ~Group이나 복수형을 사용한다.
-    ```kotlin
-    val accountList = setOf(...)
-    // -->
-    val accounts = setOf(...) // or
-    val accountSet = setOf(...)
-    ```
+  ```kotlin
+  val accountList = setOf(...)
+  // -->
+  val accounts = setOf(...) // or
+  val accountSet = setOf(...)
+  ```
 - [ ] 두 개의 구현체를 `XYZControllerForEfficientHandlingOfStrings`, `XYZControllerForEfficientStorageOfStrings`로 이름 짓는다면 단점은? 장점은?
 
 ### Make Meaningful Distinctions
