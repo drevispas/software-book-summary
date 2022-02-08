@@ -1,4 +1,6 @@
 ## 2. Meaningful Names
+Clean Code (by Robert C. Martin)에서 정리한 내용입니다.
+
 ### Use Intention-Revealing Names
 - 이름을 설명하는데 주석이 필요하다면 의도에 맞게 이름을 짓지 못한 것이다.
   ```kotlin
