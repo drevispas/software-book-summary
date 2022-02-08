@@ -1,3 +1,3 @@
 # software-book-summary
 
-## Clean Code by Robert C. Martin
+- Clean Code by Robert C. Martin
