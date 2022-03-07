@@ -149,5 +149,3 @@ val point = Complex.FromRealNumber(23.0) // 원래 생성자 Complext(RealNumber
   class HttpHandler
   ```
 ### Feature 1
-
-### Feature 2
